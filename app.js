@@ -104,36 +104,35 @@ function payload_decode(dev_eui,message){
     //------------checkcycle---------------
     if (check_cycle == '00'){
         packet_json['check_cycle'] = 15;
-//        direct30_downlink(dev_eui);
-
+        direct30_downlink(dev_eui);
     }
     else if (check_cycle == '01'){
         packet_json['check_cycle'] = 30;
-        direct15_downlink(dev_eui);
+        direct30_downlink(dev_eui);
     }
     else if (check_cycle == '02'){
         packet_json['check_cycle'] = 60;
-        direct15_downlink(dev_eui);
+        direct30_downlink(dev_eui);
     }
     else if (check_cycle == '03'){
         packet_json['check_cycle'] = 120;
-        direct15_downlink(dev_eui);
+        direct30_downlink(dev_eui);
     }
     else if (check_cycle == '04'){
         packet_json['check_cycle'] = 180;
-        direct15_downlink(dev_eui);
+        direct30_downlink(dev_eui);
     }
     else if (check_cycle == '05'){
         packet_json['check_cycle'] = 240;
-        direct15_downlink(dev_eui);
+        direct30_downlink(dev_eui);
     }
     else if (check_cycle == '06'){
         packet_json['check_cycle'] = 300;
-        direct15_downlink(dev_eui);
+        direct30_downlink(dev_eui);
     }
     else if (check_cycle == '07'){
         packet_json['check_cycle'] = 600;
-        direct15_downlink(dev_eui);
+        direct30_downlink(dev_eui);
     }
 
     //-------------json print-------------
