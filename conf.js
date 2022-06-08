@@ -5,7 +5,7 @@ var lora = {};
 var health = {};
 
 //cse config
-cse.host = "203.253.128.161";
+cse.host = "203.253.128.164";
 cse.port = "7579";
 cse.name = "Mobius";
 cse.id = "/Mobius2";
